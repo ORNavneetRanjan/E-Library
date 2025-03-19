@@ -11,7 +11,7 @@ const BookList = ({ setAlert }) => {
       (book) =>
         book.title.toLowerCase().includes(query) ||
         book.author.toLowerCase().includes(query) ||
-        book.category.toLowerCase().includes(query) // Now filters by category too
+        book.category.toLowerCase().includes(query)
     );
     setFilteredBooks(filtered);
   };
