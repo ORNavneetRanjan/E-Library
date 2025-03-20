@@ -9,7 +9,6 @@ function BorrowedBooks({ setAlert }) {
     const books = JSON.parse(localStorage.getItem("borrowedBooks")) || [];
     setBorrowedBooks(books);
   }, []);
-
   return (
     <div className="w-full min-h-screen flex flex-col justify-center items-center bg-gray-200 gap-4">
       <h2 className="text-4xl font-semibold mb-4">📚 Borrowed Books</h2>
@@ -25,6 +24,7 @@ function BorrowedBooks({ setAlert }) {
               isAble={false}
               onReturn={() => returnBook(book, setAlert, setBorrowedBooks)}
               setBorrowedBooks={setBorrowedBooks}
+              setAlert={setAlert}
             />
           ))}
         </div>
