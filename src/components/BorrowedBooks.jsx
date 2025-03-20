@@ -11,7 +11,7 @@ function BorrowedBooks({ setAlert }) {
   }, []);
 
   return (
-    <div className="container  p-4 flex flex-col justify-center items-center bg-gray-200 w-screen h-screen gap-4">
+    <div className="w-full min-h-screen flex flex-col justify-center items-center bg-gray-200 gap-4">
       <h2 className="text-4xl font-semibold mb-4">📚 Borrowed Books</h2>
 
       {borrowedBooks.length === 0 ? (

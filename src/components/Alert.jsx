@@ -38,9 +38,9 @@ function Alert({ alert, setAlert, removeAlert }) {
   const { color, textColor, Icon } = themeMap[type] || themeMap["error"];
 
   return (
-    <div className="w-full p-4 flex justify-center">
+    <div className="fixed top-4 right-4 z-50 flex flex-col items-end">
       <div
-        className={`text-lg flex justify-between items-center max-w-screen-lg w-full px-4 py-2 rounded-md shadow-lg ${color} ${textColor}`}
+        className={`text-lg flex justify-between items-center w-96 px-4 py-2 rounded-md shadow-lg ${color} ${textColor} transition-transform transform animate-slide-in`}
       >
         <span className="flex items-center gap-4">
           <Icon className="text-2xl" />
